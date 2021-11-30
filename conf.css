@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-image: url(cropped-5120-2880-743467.jpg);
+    background-position: no-repeat center center;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+.logo{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* faz com que os itens fiquem alinhados ao centro*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background: #23232e;
+    height: 10vh;
+    z-index: 1;
+}
+
+
+.corpo{
+    margin: auto;
+    width: 95vw;
+    height: 530vh;
+    padding-top: 20px;
+}
+
+div.divisao{
+    opacity: 0.9;
+    width: 95vw;
+    height: 520vh;
+    margin: 20px;
+    margin: auto;
+    background: #23232e;
+}
+
+
+
+.divisao h1{
+    color: #fff;
+    opacity: 1;
+    text-align:center;
+    padding-top: 10vh;
+
+}
+
+
+.divisao2{
+    width: 95vw;
+    height: 70vh;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+
+}
+
+.divisao2 img{
+    width: 60vw;
+    height:auto;
+    opacity: 1;
+}
+
+div.divisao3{
+    width: 95vw;
+    height: 25vh;
+}
+
+.divisao3 h1{
+    font-size: 28px;
+    margin: 5px;
+}
+
+.divisao3 h4{
+    font-size: 45px;
+    color: rgb(14, 19, 26);
+    text-align: center;
+}
+.divisao4{
+    width: 95vw;
+    height: 30vh;
+}
+.divisao4 h1{
+    text-align: center;
+    font-size: 22px;
+    margin: 5px;
+}
+.divisao5{
+    width: 95vw;
+    height: 125vh;
+    text-align: center;
+    padding-top: 130px;
+}
+.divisao5 h1{
+    font-size: 22px;
+    margin: 5px;
+}
+.divisao5 h4{
+    font-size: 45px;
+    margin: 5px;
+    color: rgb(14, 19, 26);
+    padding-bottom: 50px;
+
+}
+.divisao5 img{
+    width: 60vw;
+    height:auto;
+    opacity: 1;
+
+}
+.divisao6{
+    width: 95vw;
+    height: 125vh;
+
+    text-align: center;
+    padding-top: 130px;
+}
+.divisao6 h1{
+    font-size: 22px;
+    margin: 5px;
+}
+.divisao6 h4{
+    font-size: 45px;
+    margin: 5px;
+    color: rgb(14, 19, 26);
+    padding-bottom: 50px;
+
+}
+.divisao6 img{
+    width: 60vw;
+    height:auto;
+    opacity: 1;
+
+}
+.divisao7{
+    width: 95vw;
+    height: 125vh;
+    text-align: center;
+    padding-top: 130px;
+}
+.divisao7 h1{
+    font-size: 22px;
+    margin: 5px;
+}
+.divisao7 h4{
+    font-size: 45px;
+    margin: 5px;
+    color: rgb(14, 19, 26);
+    padding-bottom: 50px;
+
+}
+.divisao7 img{
+    width: 60vw;
+    height:auto;
+    opacity: 1;
+
+}
+.nav-list{ /* esse topico é refente ao UL*/
+    list-style: none;
+    display: flex;
+    z-index: 1;
+
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+
+}
+
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 800px) {
+    body{
+        overflow-x: hidden;/* faz com que se algo transbordar da tela fique invisivel*/
+    }
+    .nav-list{
+        position: absolute; /* odemos posionaar nossa navegaçao onde quisermos*/
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #23232e;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;/* esse codigo espalha os links pelo espaço disponivel*/
+        transform: translateX(100%);/* esse codigo faz com que o menu do botaozinho seja escondido, aparecendo apenas quando o cliente clicar*/
+        transition: transform 0.3s ease-in; /* esse codigo serve para fazer uma transoçao suave*/
+    }
+    .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu{
+        display: block;
+    }
+
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .corpo{
+        width: 95vw;
+        height: 540vh;
+    }
+
+    .divisao{
+        width: 95vw;
+        height: 530vh;
+    }
+    
+    .divisao3 h1{
+        font-size: 20px;
+    }
+    .divisao2 img{
+        width: 95vw;
+        height: 50vh;
+        margin: auto;
+        opacity: 1;
+        margin-top: 20px;
+    }
+
+    .divisao5 img{
+        width: 95vw;
+        height: 50vh;
+        margin: auto;
+        opacity: 1;
+        margin: auto;
+
+    }
+
+    .divisao6 img{
+        width: 95vw;
+        height: 50vh;
+        margin: auto;
+        opacity: 1;
+    }
+
+    .divisao7{
+        height: 127vh;
+    }
+
+    .divisao7 img{
+        width: 95vw;
+        height: 50vh;
+        margin: auto;
+        opacity: 1;
+    }
+
+    .divisao4 h1, .divisao5 h1, .divisao6 h1, .divisao7 h1{
+        font-size: 20px;
+    }
+
+    
+
+}
+
+.nav-list.active{ /* quando esse codigo estiver ativo o transform voltara para 0*/
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade{ /* ele anima da opacidade 0 a 1*/
+  from{
+      opacity: 0;
+      transform: translateX(50px);
+  }
+  to{
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+.mobile-menu.nav-list.active .line1{
+    transform:rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.nav-list.active .line2{
+    opacity: 0;
+
+}
+.mobile-menu.nav-list.active .line3{
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+/* rodape*/
+
+.container{
+	max-width: 1200px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+@media(max-width: 575px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+/* conf carousel*/
+
+div.cima{
+    width: 95vw;
+    height: 1px;
+}
