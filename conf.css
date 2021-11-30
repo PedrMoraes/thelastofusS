@@ -40,22 +40,25 @@ nav{
 .corpo{
     margin: auto;
     width: 95vw;
-    height: 530vh;
+    height: 480vh;
     padding-top: 20px;
 }
 
-div.divisao{
+.divisao{
     opacity: 0.9;
     width: 95vw;
-    height: 520vh;
+    height: auto;
     margin: 20px;
     margin: auto;
     background: #23232e;
 }
 
+.substituto{
+    width: 95vw;
+    height: 30vh;
+}
 
-
-.divisao h1{
+.substituto h1{
     color: #fff;
     opacity: 1;
     text-align:center;
@@ -64,35 +67,51 @@ div.divisao{
 }
 
 
-.divisao2{
+.inutil{
     width: 95vw;
-    height: 70vh;
+    height: 100vh;
     text-align: center;
-    display:flex;
-    flex-direction: column;
+    padding-top: 60px;
 
+}
+
+.inutil img{
+    width: 80vw;
+    height:auto;
+    opacity: 1;
+}
+
+.divisao2 {
+    width: 95vh;
+    height: 1vh;
+    text-align: center;
 }
 
 .divisao2 img{
     width: 60vw;
     height:auto;
     opacity: 1;
+
 }
 
-div.divisao3{
+
+
+.divisao3{
     width: 95vw;
     height: 25vh;
 }
 
 .divisao3 h1{
     font-size: 28px;
-    margin: 5px;
+    margin: 25px;
+    color: #fff;
 }
 
 .divisao3 h4{
     font-size: 45px;
     color: rgb(14, 19, 26);
     text-align: center;
+    padding-top: 20px;
 }
 .divisao4{
     width: 95vw;
@@ -101,17 +120,19 @@ div.divisao3{
 .divisao4 h1{
     text-align: center;
     font-size: 22px;
-    margin: 5px;
+    margin: 25px;
+    color: #fff;
 }
 .divisao5{
     width: 95vw;
-    height: 125vh;
+    height: 100vh;
     text-align: center;
-    padding-top: 130px;
+    padding-top: 60px;
 }
 .divisao5 h1{
     font-size: 22px;
-    margin: 5px;
+    margin: 25px;
+    color: #fff;
 }
 .divisao5 h4{
     font-size: 45px;
@@ -128,14 +149,14 @@ div.divisao3{
 }
 .divisao6{
     width: 95vw;
-    height: 125vh;
-
+    height: 100vh;
     text-align: center;
-    padding-top: 130px;
+    padding-top: 60px;
 }
 .divisao6 h1{
     font-size: 22px;
-    margin: 5px;
+    margin: 25px;
+    color: #fff;
 }
 .divisao6 h4{
     font-size: 45px;
@@ -152,13 +173,14 @@ div.divisao3{
 }
 .divisao7{
     width: 95vw;
-    height: 125vh;
+    height: 100vh;
     text-align: center;
-    padding-top: 130px;
+    padding-top: 60px;
 }
 .divisao7 h1{
     font-size: 22px;
-    margin: 5px;
+    margin: 25px;
+    color: #fff;
 }
 .divisao7 h4{
     font-size: 45px;
@@ -232,57 +254,49 @@ div.divisao3{
 
     .corpo{
         width: 95vw;
-        height: 540vh;
+        height: auto;
     }
 
     .divisao{
         width: 95vw;
-        height: 530vh;
+        height: auto;
+    }
+
+    .inutil{
+        width: 95vw;
+        height: auto;
     }
     
     .divisao3 h1{
         font-size: 20px;
     }
-    .divisao2 img{
-        width: 95vw;
-        height: 50vh;
-        margin: auto;
-        opacity: 1;
-        margin-top: 20px;
-    }
-
-    .divisao5 img{
-        width: 95vw;
-        height: 50vh;
-        margin: auto;
-        opacity: 1;
-        margin: auto;
-
-    }
-
-    .divisao6 img{
-        width: 95vw;
-        height: 50vh;
-        margin: auto;
-        opacity: 1;
-    }
 
     .divisao7{
-        height: 127vh;
+        height: auto;
     }
 
-    .divisao7 img{
-        width: 95vw;
-        height: 50vh;
-        margin: auto;
-        opacity: 1;
+    .divisao6{
+        height: auto;
+    }
+
+    .divisao5{
+        height: auto;
     }
 
     .divisao4 h1, .divisao5 h1, .divisao6 h1, .divisao7 h1{
         font-size: 20px;
     }
 
-    
+     .divisao5 img, .divisao6 img, .divisao7 img{
+        width: 75vw;
+        height: auto;
+        margin: auto;
+        opacity: 1;
+
+
+    }
+
+
 
 }
 
@@ -390,11 +404,4 @@ ul{
   .footer-col{
     width: 100%;
 }
-}
-
-/* conf carousel*/
-
-div.cima{
-    width: 95vw;
-    height: 1px;
 }
